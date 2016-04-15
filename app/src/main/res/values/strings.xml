@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RistoPronto!</string>
+    <string name="action_settings">Preferenza Posti</string>
+
+    <string name="posto_random">Posto random</string>
+    <string name="scelta_posto_finestre">Posto vicino le finestre</string>
+    <string name="scelta_posto_interno">Posto all\'interno del locale</string>
+</resources>

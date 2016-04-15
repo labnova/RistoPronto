@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.labnova.innocenzotremamondo.smilecar.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" >
+        <menu>
+            <item android:id="@+id/posto_finestra"
+                android:title="@string/scelta_posto_finestre"/>
+            <item android:id="@+id/posto_interno"
+                android:title="@string/scelta_posto_interno"/>
+        </menu>
+        </item>
+    <item
+        android:id="@+id/posto_random"
+        android:title="@string/posto_random"
+        android:showAsAction="never" />
+</menu>

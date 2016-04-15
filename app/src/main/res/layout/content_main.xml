@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.labnova.innocenzotremamondo.smilecar.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prenota"
+        android:id="@+id/buttonPrenotazione"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="117dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Posto"
+        android:id="@+id/postoAssegnato"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="numero"
+        android:id="@+id/textView2"
+        android:paddingRight="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/postiTotali"
+        android:layout_toStartOf="@+id/postoAssegnato" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="inserisci commenti.."
+        android:id="@+id/commentiPrenotazione"
+        android:layout_centerVertical="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posti totali"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/postoAssegnato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="100"
+        android:id="@+id/postiTotali"
+        android:autoText="false"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/postoAssegnato" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numeroPostiCustom"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonPrenotazione"
+        android:hint="numero Posti.." />
+
+    <Button
+        android:id="@+id/buttonOrario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="scegli l'orario"
+        android:layout_above="@id/buttonPrenotazione"
+        android:onClick="showTimePickerDialog" />
+
+    <TextView
+        android:id="@+id/orarioDaSettare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonOrario"
+        android:layout_alignRight="@id/buttonOrario"
+        android:text="orarioDaSettare"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="conferma"
+        android:id="@+id/confermaButton"
+        android:layout_below="@+id/numeroPostiCustom"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
